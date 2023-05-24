@@ -1,0 +1,22 @@
+main {
+    background-color: paleturquoise;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    text-align: center;
+
+}
+
+.foot {
+    background-color: steelblue;
+    height: 100px;
+}
+
+.snuffy {
+    height: 200px;
+    width: 200px;
+
+}
+
