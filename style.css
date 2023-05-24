@@ -1,22 +1,32 @@
 main {
-    background-color: paleturquoise;
+    background-color: rgb(35, 43, 65);
     height: 100%;
     width: 100%;
-}
-
-main {
     text-align: center;
-
+    color: azure;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .foot {
     background-color: steelblue;
-    height: 100px;
+    height: 150px;
+    text-align: center;
+}
+
+.page-title {
+padding-bottom: 35px;
 }
 
 .snuffy {
     height: 200px;
     width: 200px;
+    position: relative;
+    margin:auto;
 
 }
 
+.btn {
+padding: 2%;
+margin: 20px;
+}
