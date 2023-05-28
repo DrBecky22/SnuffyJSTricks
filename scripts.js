@@ -1,3 +1,6 @@
-document.getElementById('left-button').addEventListener()
+document.getElementById('snuffyPicStart').addEventListener()
 
-let myfunction = 
+let rotateRight() {
+    document.getElementById('snuffyPicStart').style.transform = 'rotate(360deg)';
+}
+
