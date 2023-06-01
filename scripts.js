@@ -13,11 +13,10 @@ function dateBtn() {
     dateData = new Date();
     currentDay = dateData.getDay();
     document.getElementById('day').textContent = days[currentDay];
-currentMonth = dateData.getMonth();
-currentDate = dateData.getDate();
-currentYear = dateData.getFullYear();
-document.getElementById('month-date-year').textContent = `$(months[currentMonth] $(currentDate)`;
-
+    currentMonth = dateData.getMonth();
+    currentDate = dateData.getDate();
+    currentYear = dateData.getFullYear();
+    document.getElementById('month-date-year').textContent = `$(months[currentMonth] $(currentDate)`;
     // const date = getDate()
     // document.getElementById('dateTime').innerHTML.date;
     // return false;
