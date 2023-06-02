@@ -1,17 +1,30 @@
 
 function colorChange() {
-    alert("you made it to ColorChange!")
-    document.getElementById('pageTitle').style.color='red';
+    // alert("you made it to ColorChange!")
+    document.getElementById('pageTitle').style.color='RebeccaPurple';
     return false;
 }
 
-function rotateClock() {
+function colorBack() {
+    document.getElementById('pageTitle').style.color='white';
+}
+
+function fallClock() {
     document.getElementById('snuffyPicStart').style.transform = "rotate(90deg)";
 }
 
-function rotateWiddershins() {
+function fallWidder() {
     document.getElementById('snuffyPicStart').style.transform = "rotate(-90deg)";
 }
+
+function spinClock() {
+    document.getElementById('snuffyPicStart').classList.add('rotate-clock');
+}
+
+function spinWidder() {
+    document.getElementById('snuffyPicStart').classList.add('rotate-widd');
+}
+
 
 function snuffyStyleScared() {
     alert('confused button!');

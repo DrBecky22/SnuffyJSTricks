@@ -25,7 +25,19 @@ padding-bottom: 35px;
     width: 200px;
     position: relative;
     margin:auto;
+}
 
+#snuffyPicStart {
+    transition-duration: 3s;
+    height: 170px;
+}
+
+.rotate-clock {
+    transform: rotate(360deg);
+}
+
+.rotate-widd {
+    transform: rotate(-360deg);
 }
 
 .btn {

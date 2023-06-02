@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +24,7 @@
                         <div class="navbar-nav" id="nav-links">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                             <a class="nav-link active" aria-current="page" href="#">MiddleSection</a>
-                            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                            <a class="nav-link active" aria-current="page" href="#foot-title">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -32,9 +32,10 @@
     </header>
 
     <main>
-        <h1 class="page-title" id="pageTitle" onclick="colorChange()">Snuffy Fan Page</h1>
+        <h1 class="page-title" id="pageTitle" onmouseover="colorChange()" onmouseout="colorBack()">Snuffy Fan Page</h1>
         <div class="snuffy">
-            <img id="snuffyPicStart" src="snuffyMain.svg" alt="">            
+            <img id="snuffyPicStart" src="snuffyMain.svg" alt="Cute Elephant">            
+            <!-- <img id="snuffyPicStart" src="elephantBlue.png" alt=""> -->
         </div>
         <h3 class="snuf-subtitle">Some Words About Snuffy</h3>
         <p>This is Snuffy. Snuffy is an adorable and magical creature that has many moods and can do many things. Explore all Snuffy can do by clicking the buttons below.</p>
@@ -50,9 +51,11 @@
                 <!-- <img src="https://loremflickr.com/320/240" class="card-img-top" alt="..."> -->
                 <div class="card-body">
                   <h5 class="card-title">Spinning Snuffy</h5>
-                  <p class="card-text">You spin me right round baby, right round. like a record baby...Click the button below to get Snuffy to turn cartwheels</p>
-                  <button class="btn btn-primary" id="spinRight" onclick="rotateClock()">Clockwise</button>
-                  <button class="btn btn-primary" id="spinLeft" onclick="rotateWiddershins()">Widdershins</button>
+                  <p class="card-text">You spin me right round baby, right round. like a record baby...Click the button below to get Snuffy to lay down or turn cartwheels. Hit refresh to get Snuffy to stand up again.</p>
+                  <button class="btn btn-primary" onclick="fallClock()">Fall Right</button>
+                  <button class="btn btn-primary" onclick="fallWidder()">Fall Left</button>
+                  <button class="btn btn-primary" onclick="spinClock()">Spin Clockwise</button>
+                  <button class="btn btn-primary" onclick="spinWidder()">Spin Widdershins</button>
                 </div>
               </div>
             </div>
@@ -64,7 +67,7 @@
                 <!-- <img src="https://loremflickr.com/320/240/dog" class="card-img-top" alt="..."> -->
                 <div class="card-body">
                   <h5 class="card-title">Alt Snuffy</h5>
-                  <p class="card-text">Click the button to show Snuffy's other personalities.</p>
+                  <p class="card-text">Click the button to show Snuffy's other personalities. For extra fun, change the color <em>then</em> click a spin button. oooohhhhh.</p>
                   <button class="btn btn-primary" onclick="snuffyStyleScared()">Confused</button>
                   <button class="btn btn-primary" onclick="snuffyStyleBlue()">Blue</button>
                   <button class="btn btn-primary" onclick="snuffyStylePaisley()">PartyPants</button>
@@ -163,9 +166,9 @@
 
     <footer>
         <div class="foot">
-            <h2 class="foot-title">Contact Section</h2>
-            <h4 class="contact-email">email</h4>
-            <h4 class="contact-phone">phone</h4>
+            <h2 id="foot-title">Contact Section</h2>
+            <h4 id="contact-email">email</h4>
+            <h4 id="contact-phone">phone</h4>
         </div>
     </footer>
 
