@@ -5,6 +5,29 @@ function colorChange() {
     return false;
 }
 
+function rotateClock() {
+    document.getElementById('snuffyPicStart').style.transform = "rotate(90deg)";
+}
+
+function rotateWiddershins() {
+    document.getElementById('snuffyPicStart').style.transform = "rotate(-90deg)";
+}
+
+function snuffyStyleScared() {
+    alert('confused button!');
+    document.getElementById('snuffyPicStart').src = 'elephantScared.png';
+}
+
+function snuffyStyleBlue() {
+    alert('you took the blue pill');
+    document.getElementById('snuffyPicStart').src = 'elephantBlue.png';
+}
+
+function snuffyStylePaisley() {
+    alert("It's your birthday!");
+    document.getElementById('snuffyPicStart').src = 'elephantPaisley.png';
+}
+
 function dateBtn() {
     alert("you are at the date button");
     // document.getElementById('dateTime').innerHTML = "<p> hello </p>";
@@ -22,8 +45,3 @@ function dateBtn() {
     // return false;
 }
 
-function snuffyStyleScared() {
-    alert('confused button!');
-    document.getElementById('snuffyPicStart');
-    img.src = 'elephantScared.png';
-}
