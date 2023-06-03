@@ -14,14 +14,15 @@
 <body>
     <header>
             <nav class="navbar navbar-expand-sm navbar-light bg-dark-subtle">
-                <div class="container-fluid">
+                <div class="container-fluid d-flex justify-content-between" >
+
                     <a class="navbar-brand" href="#">Snuffalupagus</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
                         aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarID">
-                        <div class="navbar-nav" id="nav-links">
+                        <div class="navbar-nav ms-auto" id="nav-links">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                             <a class="nav-link active" aria-current="page" href="#">MiddleSection</a>
                             <a class="nav-link active" aria-current="page" href="#foot-title">Contact</a>
@@ -52,7 +53,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Spinning Snuffy</h5>
                   <p class="card-text">You spin me right round baby, right round. like a record baby...Click the button below to get Snuffy to lay down or turn cartwheels. Hit refresh to get Snuffy to stand up again.</p>
-                  <button class="btn btn-primary" onclick="fallClock()">Fall Right</button>
+                  <button class="btn btn-primary" id="fallClock">Fall Right</button>
                   <button class="btn btn-primary" onclick="fallWidder()">Fall Left</button>
                   <button class="btn btn-primary" onclick="spinClock()">Spin Clockwise</button>
                   <button class="btn btn-primary" onclick="spinWidder()">Spin Widdershins</button>

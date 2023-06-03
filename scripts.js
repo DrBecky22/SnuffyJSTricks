@@ -1,3 +1,5 @@
+let currentDeg = 0
+
 
 function colorChange() {
     // alert("you made it to ColorChange!")
@@ -10,7 +12,10 @@ function colorBack() {
 }
 
 function fallClock() {
-    document.getElementById('snuffyPicStart').style.transform = "rotate(90deg)";
+    console.log(document.getElementById('snuffyPicStart').style.transform)
+    currentDeg += 90
+    // currentDeg = currentDeg + 90
+    document.getElementById('snuffyPicStart').style.transform = `rotate(${currentDeg}deg)`;
 }
 
 function fallWidder() {
@@ -18,6 +23,7 @@ function fallWidder() {
 }
 
 function spinClock() {
+    console.log('spinClock')
     document.getElementById('snuffyPicStart').classList.add('rotate-clock');
 }
 
@@ -58,3 +64,4 @@ function dateBtn() {
     // return false;
 }
 
+document.getElementById('fallClock').addEventListener('click', fallClock)
